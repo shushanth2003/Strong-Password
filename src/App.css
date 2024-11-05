@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+body{
+  font-family: "Poppins", serif;
+}
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 100px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #3366cc; /* Alternative blue shade */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.password-length,
+.include-case {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.password-length label,
+.include-case label {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+.password-length input[type="number"] {
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.include-case div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+#includeupper,
+#includelower,
+#includenumber,
+#includesymbols {
+  margin-right: 5px;
+}
+
+#generate-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #28a745; /* Green shade */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+#generate-btn:hover {
+  background-color: #218838;
+}
+
+.password-output {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  width: 100%;
+}
+
+.password-output input[readonly] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px 0 0 4px;
+}
+
+.password-output button {
+  padding: 8px 12px;
+  border: none;
+  background-color: #007bff; /* Blue shade */
+  color: #fff;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+}
+
+.password-output button:hover {
+  background-color: #0056b3;
+}
